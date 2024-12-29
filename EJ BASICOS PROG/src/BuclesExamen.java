@@ -19,23 +19,32 @@ public class BuclesExamen {
         // más bajo y la media de los números impares.
         System.out.println("Ejercicio 1");
 
-        int max=-999999999;
-        int min=999999999;
-        for (int cont=0; cont <= 10 ; cont++){
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int suma=0;
+        int cont=1;
+        for (cont=1; cont <= 10 ; cont++){
 
         System.out.println("Dame un numero");
         int num=sc.nextInt();
+        suma=suma+num;
 
             if (num % 2 != 0) {
-                if (num>=max) {
+                if (num>max) {
                     max=num;
                 }
-                if (num<=min) {
+                if (num<min) {
                     min=num;
                 }
             }
+            
+            }
+            System.out.println("El impar mas alto es: " +max);
+                System.out.println("El impar mas bajo es: " +min);
+                System.out.println("Media impares: " +(double)suma/cont);
+                cont=cont+1;
     }
-    }
+
     private static void ejercicio2(Scanner sc) {
        
         // Escribe un programa que solicite al usuario ingresar la temperatura diaria de
