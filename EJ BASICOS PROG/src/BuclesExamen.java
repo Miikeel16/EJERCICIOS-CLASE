@@ -51,6 +51,27 @@ public class BuclesExamen {
         // una semana (7 días). El programa debe calcular la temperatura máxima, la
         // mínima y la temperatura media de la semana.
 
+        int cont=1;
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        int suma=0;
+
+        while (cont<=7) {
+        System.out.println("Dame la temperatura del dia");
+        int temp=sc.nextInt();
+            suma=suma + temp;
+            if (temp>max) {
+                max=temp;
+            }else if (temp<min) {
+                min=temp;
+            }
+
+        cont=cont+1;
+        }
+        System.out.println("Max temperatura: "+max);
+        System.out.println("Min temperatura: "+min);
+        System.out.println("Media temperatura: "+(double)suma/cont);
+
         System.out.println("Ejercicio 2");
         
     }
