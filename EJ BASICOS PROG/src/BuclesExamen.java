@@ -153,5 +153,31 @@ public class BuclesExamen {
 
         System.out.println("Ejercicio 5");
         
-       
+       int cont=1;
+       int maxpri= Integer.MIN_VALUE;
+       int minpri= Integer.MAX_VALUE;
+       int maxsec= Integer.MIN_VALUE;
+       int minsec= Integer.MAX_VALUE;
+       int maxter= Integer.MIN_VALUE;
+       int minter= Integer.MAX_VALUE;
+       int maxcua= Integer.MIN_VALUE;
+       int mincua= Integer.MAX_VALUE;
+
+       while (cont<=12) {
+        System.out.println("Dame la venta del mes");
+        if (cont>=1 || cont<=3) {
+            
+        }
+        if (cont>=4 || cont<=6) {
+            
+        }
+        if (cont>=7 || cont<=9) {
+            
+        }
+        if (cont>=10 || cont<=12) {
+            
+        }
+        cont=cont+1;
+       }
+}
 }
