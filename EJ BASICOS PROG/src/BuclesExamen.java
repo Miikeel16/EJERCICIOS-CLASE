@@ -82,8 +82,29 @@ public class BuclesExamen {
         // números ingresados y luego determinar cuál es el número máximo, el mínimo
         // y la diferencia entre los dos.
 
-
         System.out.println("Ejercicio 3");
+
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        
+        System.out.println("Dame un numero, si escribes 0 termina");
+        int num=sc.nextInt();
+
+        while (num!=0) {
+            if (num>max) {
+                max=num;
+            }else if (num<min) {
+                min=num;
+            }
+            System.out.println("Dame un numero, si escribes 0 termina");
+            num=sc.nextInt();
+        }
+        double diferencia=max-min;
+        System.out.println("Max num: "+max);
+        System.out.println("Min num: "+min);
+        System.out.println("Diferencia: "+(double)diferencia);
+        
+
         
     }
     private static void ejercicio4(Scanner sc) {
@@ -97,6 +118,29 @@ public class BuclesExamen {
 
         System.out.println("Ejercicio 4");
         
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        int suma=0;
+        int cont=0;
+
+        System.out.println("Dame una altura en cm, si es negativa termina");
+        int alt=sc.nextInt();
+
+        while (alt>=0) {
+            suma =suma+alt;
+            if (alt>max) {
+                max=alt;
+            }
+            if (alt<min) {
+                min=alt;
+            }
+        System.out.println("Dame una altura en cm, si es negativa termina");
+        alt=sc.nextInt();
+            cont=cont+1;
+        }
+        System.out.println("Max altura: "+max);
+        System.out.println("Min altura "+min);
+        System.out.println("Media altura: "+(double)suma/cont);
     }
     private static void ejercicio5(Scanner sc) {
         
@@ -109,5 +153,5 @@ public class BuclesExamen {
 
         System.out.println("Ejercicio 5");
         
-    }
+       
 }
