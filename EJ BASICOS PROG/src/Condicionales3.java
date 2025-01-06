@@ -173,15 +173,26 @@ public class Condicionales3 {
         int dias = 0;
 
         switch (mes) {
-            case 1,3,5,7,10,12:
-            dias=31;
-            break;
-            case 4,6,8,11:
-            dias=30;
-            break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 10:
+            case 12:
+                dias = 31;
+                break;
+            case 4:
+            case 6:
+            case 8:
+            case 11:
+                dias = 30;
+                break;
             case 2:
-            dias=28;
-            break;
+                dias = 28;
+                break;
+            default:
+                System.out.println("Mes inválido");
+                break;
         }
         System.out.println("El mes " + mes + " Tiene " + dias + " dias");
 
